@@ -9,6 +9,12 @@
     <title>Document</title>
     <style>
         li { list-style: none;}
+        .photo {list-style: none; padding: 0; margin: 0;}
+        .photo li {float: left; width: 50%;}
+        .photo li a {display: block; margin: 5px; border: 1px;}
+        .photo li img {display: block; width: 50%; height: auto;}
+        .photo li img:hover {display: block; width: 100%; height: auto;}
+
     </style>
 </head>
 <body>
@@ -16,7 +22,7 @@
     <div data-role="page" id="home">
         <div data-role="header" data-position="fixed">
             <h1>cats</h1>
-            <a href="#mean" data-icon="carat-r" class="ui-btn-right"></a>
+            <a href="#mean" data-icon="carat-r" data-iconpos="right" class="ui-btn-right">다음</a>
         </div>
         <div data-role="content" style="text-align: center">
             <img src="img/cat.jpg" width="500px"><br>
@@ -24,20 +30,19 @@
                 <li><a href="#mean">mean</a></li>
                 <li><a href="#movie" data-role="close" data-dialog="true">movie</a></li>
                 <li><a href="#music">music</a></li>
-                <li><a href="#">b</a></li>
-                <li><a href="#">c</a></li>
+                <li><a href="#photo">photo</a></li>
             </ul>
         </div>
         <div data-role="footer" data-position="fixed">
             <h1>HI</h1>    
         </div>
     </div>
-    <!-- page2 -->
+    <!-- mean -->
     <div data-role="page" id="mean">
         <div data-role="header" data-position="fixed">
             <h1>cats</h1>
-            <a href="#home" data-icon="carat-l"></a>
-            <a href="#movie" data-icon="carat-r"></a>
+            <a href="#home" data-icon="carat-l" data-iconpos="left">이전</a>
+            <a href="#movie" data-icon="carat-r" data-iconpos="right">다음</a>
         </div>
         <div data-role="content">
             <div class="ui-grid-a">
@@ -105,12 +110,12 @@
             <h1>HI</h1>
         </div>
     </div>
-    <!-- page3 -->
+    <!-- movie -->
     <div data-role="page" id="movie">
         <div data-role="header" data-position="fixed">
             <h1>cats</h1>
-            <a href="#mean" data-icon="carat-l"></a>
-            <a href="#music" data-icon="carat-r"></a>
+            <a href="#mean" data-icon="carat-l" data-iconpos="left">이전</a>
+            <a href="#music" data-icon="carat-r" data-iconpos="right">다음</a>
         </div>
         <div data-role="content" style="text-align: center">
             <img src="img/cat.jpg" width="500px"><br>
@@ -135,11 +140,12 @@
             <h1>HI</h1>
         </div>
     </div>
-    <!-- page4 -->
+    <!-- music -->
     <div data-role="page" id="music">
         <div data-role="header" data-position="fixed">
             <h1>cats</h1>
-            <a href="#movie" data-icon="carat-l"></a>
+            <a href="#movie" data-icon="carat-l" data-iconpos="left">이전</a>
+            <a href="#photo" data-icon="carat-r" data-iconpos="right">다음</a>
         </div>
         <div data-role="content" style="text-align: center">
             <img src="img/cat.jpg" width="500px"><br>
@@ -162,6 +168,27 @@
         </div>
         <div data-role="footer" data-position="fixed">
             <h1>HI</h1>
+        </div>
+    </div>
+    <!-- photo -->
+    <div data-role="page" id="photo">
+        <div data-role="header" data-position="fixed">
+            <a href="#music" data-icon="carat-l" data-iconpos="left">이전</a>
+            <h1>cats</h1>
+            <a href="#home" data-icon="home" data-iconpos="right">처음</a>
+        </div>
+        <div data-role="content">
+            <img src="img/cat.jpg" width="500px"><br>
+            <ul class="photo">
+                <li><a href="img/cat6.jpg " rel="external"><img src="img/cat6.jpg"></a></li>
+                <li><a href="img/cat7.jpg " rel="external"><img src="img/cat7.jpg"></a></li>
+                <li><a href="img/cat8.jpg " rel="external"><img src="img/cat8.jpg"></a></li>
+                <li><a href="img/cat5.jpg " rel="external"><img src="img/cat5.jpg"></a></li>
+                <li><a href="img/cat9.jpg " rel="external"><img src="img/cat9.jpg"></a></li>
+            </ul>
+        </div>
+        <div data-role="footer">
+
         </div>
     </div>
 </body>
