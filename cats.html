@@ -23,7 +23,7 @@
             <ul data-role="listview" data-inset="true">
                 <li><a href="#mean">mean</a></li>
                 <li><a href="#movie" data-role="close" data-dialog="true">movie</a></li>
-                <li><a href="#">a</a></li>
+                <li><a href="#music">music</a></li>
                 <li><a href="#">b</a></li>
                 <li><a href="#">c</a></li>
             </ul>
@@ -110,8 +110,10 @@
         <div data-role="header" data-position="fixed">
             <h1>cats</h1>
             <a href="#mean" data-icon="carat-l"></a>
+            <a href="#music" data-icon="carat-r"></a>
         </div>
-        <div data-role="content">
+        <div data-role="content" style="text-align: center">
+            <img src="img/cat.jpg" width="500px"><br>
             <div class="ui-bar ui-bar-b">솜방망이</div>
             <ul>
                 <li>
@@ -126,6 +128,35 @@
                     <video controls width="100%">
                         <source src="video/siri.mp4" type="video/mp4">
                     </video>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer" data-position="fixed">
+            <h1>HI</h1>
+        </div>
+    </div>
+    <!-- page4 -->
+    <div data-role="page" id="music">
+        <div data-role="header" data-position="fixed">
+            <h1>cats</h1>
+            <a href="#movie" data-icon="carat-l"></a>
+        </div>
+        <div data-role="content" style="text-align: center">
+            <img src="img/cat.jpg" width="500px"><br>
+            <div class="ui-bar ui-bar-b">음악1</div><br>
+            <ul>
+                <li>
+                    <audio control width="100">
+                        <source src="music/som.mp3" type="audio/mp3">    
+                    </audio>
+                </li>
+            </ul>
+            <div class="ui-bar ui-bar-b">음악1</div><br>
+            <ul>
+                <li>
+                    <audio control width="100">
+                        <source src="music/siri.mp3" type="audio/mp3">    
+                    </audio>
                 </li>
             </ul>
         </div>
